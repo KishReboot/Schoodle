@@ -6,5 +6,6 @@ CREATE TABLE events (
   title VARCHAR(255) NOT NULL,
   description VARCHAR(255) NOT NULL,
   organizer_id INT REFERENCES users(id),
-  url_id VARCHAR(255) NOT NULL UNIQUE
+  url_id VARCHAR(255) NOT NULL UNIQUE,
+  dateTime CURRENT_TIMESTAMP
 );
