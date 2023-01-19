@@ -19,29 +19,25 @@
 
 <body>
   <h1>Event Details</h1>
-  <details>
-    <summary>Event Title</summary>
-    <p><%= title %></p>
-  </details>
-  <details>
-    <summary>Event Description</summary>
-    <p><%= description %></p>
-  </details>
-  <details>
-    <summary>Organizer Name</summary>
-    <p><%= name %></p>
-  </details>
-  <details>
-    <summary>Organizer Email</summary>
-    <p><%= email %></p>
-  </details>
-  <details>
-    <summary>Event Date</summary>
-    <p><%= date %></p>
-  </details>
-  <details>
-    <summary>Event Time</summary>
-    <p><%= time %></p>
-  </details>
+  <form class="form-inline">
+    <div class="form-group mb-2">
+      <label for="eventTitle">Event title: <%= title %></label>
+    </div>
+    <div class="form-group mb-2">
+      <label for="eventTitle">Event description: <%= description %></label>
+    </div>
+    <div class="form-group mb-2">
+      <label for="eventTitle">Organizer name: <%= name %></label>
+    </div>
+    <div class="form-group mb-2">
+      <label for="eventTitle">Organizer email: <%= email %></label>
+    </div>
+    <div class="form-group mb-2">
+      <label for="eventTitle">Event date: <%= date %></label>
+    </div>
+    <div class="form-group mb-2">
+      <label for="eventTitle">Event time: <%= time %></label>
+    </div>
+  </form>
 </body>
 </html>

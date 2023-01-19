@@ -60,13 +60,7 @@ app.post('/', (req, res) => {
     title: eventTitle, description: eventDesc, name: organizerName, email: organizerEmail, date: eventDate, time: eventTime})
 });
 
-app.post('/', (req, res)=>{
-  const {
-    eventTitle, eventDesc, organizerName, organizerEmail, eventDate, eventTime
-  } = req.body;
-  console.log(req.body);
-  res.json({title: eventTitle, description: eventDesc, name: organizerName, email: organizerEmail, date: eventDate, time: eventTime})
-})
+
 
 app.listen(PORT, () => {
   console.log(`Schoodle app listening on port ${PORT}`);
