@@ -1,4 +1,4 @@
--- Drop and recreate Events table (Example)
+-- Drop and recreate Events table
 
 DROP TABLE IF EXISTS events CASCADE;
 CREATE TABLE events (

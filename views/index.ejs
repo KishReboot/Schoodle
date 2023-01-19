@@ -22,7 +22,53 @@
   <!-- Collect Organizer info and Event info -->
     <!-- Use TinyApp Create URL Form as an example -->
 <body>
-  <form>
+  <main style="margin: 1em;">
+  <!-- Create Event Page -->
+    <h3>SCHOODLE</h3>
+    <h4>Create Event Page</h4>
+    <form method="POST">
+      <div class="form-group mb-2">
+        <label for="eventTitle">Title</label>
+          <input
+          class="form-control"
+          type="text"
+          name="eventTitle"
+          placeholder="Best event ever!"
+          style="width: 200px; margin: 1em"
+          />
+      </div>
+      <div>
+        <label for="eventDesc">Description</label>
+          <input
+          class="form-control"
+          type="text"
+          name="eventDesc"
+          placeholder="Best description for the best event ever!"
+          style="width: 300px; margin: 1em"
+          />
+      </div>
+      <div>
+        <label for="organizerName">Your name!</label>
+          <input
+          class="form-control"
+          type="text"
+          name="organizerName"
+          placeholder="Name of the best organizer!"
+          style="width: 200px; margin: 1em"
+          />
+      </div>
+      <div>
+        <label for="organizerEmail">Your email!</label>
+          <input
+          class="form-control"
+          type="text"
+          name="organizerEmail"
+          placeholder="Email of the best organizer!"
+          style="width: 200px; margin: 1em"
+          />
+      </div>
+      <button class="btn btn-primary">Create Event</button>
+    </form>
+  </main>
 </body>
-
 </html>
