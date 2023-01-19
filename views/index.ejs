@@ -23,9 +23,9 @@
   <main style="margin: 1em;">
     <!-- Create Event Page -->
     <h3>SCHOODLE</h3>
-    <h4>Create Event Page</h4>
+    <h4>Create Event</h4>
     <!-- Collect Organizer info and Event info -->
-    <form method="POST">
+    <form class="form-inline" action="/" method="POST">
       <div class="form-group mb-2">
         <label for="eventTitle">Event Title.</label>
           <input
@@ -34,6 +34,7 @@
           name="eventTitle"
           placeholder="Please enter name of your event."
           style="width: 300px; margin: 1em"
+          required
           />
       </div>
       <div>
@@ -47,51 +48,59 @@
           />
       </div>
       <div>
-        <label for="organizerName">Your name!</label>
+        <label for="organizerName">Your name</label>
           <input
           class="form-control"
           type="text"
           name="organizerName"
           placeholder="Please enter your name."
           style="width: 300px; margin: 1em"
+          required
           />
       </div>
       <div>
-        <label for="organizerEmail">Your email!</label>
+        <label for="organizerEmail">Your email</label>
           <input
           class="form-control"
           type="text"
           name="organizerEmail"
           placeholder="Please enter your email."
           style="width: 300px; margin: 1em"
+          required
           />
       </div>
-      <button class="btn btn-primary">Create Event</button>
-      <!-- Attendee Information (will be moved) -->
-      <h4>Attendee Info</h4>
-      <form method="POST">
-        <div class="form-group mb-2">
-          <div>
-            <label for="visitorName">Your name!</label>
-              <input
-              class="form-control"
-              type="text"
-              name="visitorName"
-              placeholder="Please enter your name."
-              style="width: 300px; margin: 1em"
-              />
-            </div>
-            <div>
-              <label for="visitorEmail">Your email!</label>
-                <input
-                class="form-control"
-                type="text"
-                name="vistiorEmail"
-                placeholder="Please enter your email"
-                style="width: 300px; margin: 1em"
-                />
-            </div>
-      <button class="btn btn-primary">Join Event</button>
+      <div>
+        <label for="eventDate">Select a date.</label>
+        <input
+          type="date"
+          name="eventDate"
+          min="2023-01-19"
+          required
+        />
+      </div>
+      <div>
+        <label for="eventTime">Please select 3 different times.</label>
+          <input
+            type="time"
+            name="eventTime"
+            min="09:00"
+            max="18:00"
+            required
+          />
+          <input
+            type="time"
+            name="eventTime"
+            min="09:00"
+            max="18:00"
+          />
+          <input
+            type="time"
+            name="eventTime"
+            min="09:00"
+            max="18:00"
+          />
+      </div>
+      <button type="submit" value="event" class="btn btn-primary">Create Event</button>
     </form>
   </main>
 </body>
