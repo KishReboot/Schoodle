@@ -25,16 +25,15 @@
     <h3>SCHOODLE</h3>
     <h4>Create Event Page</h4>
     <!-- Collect Organizer info and Event info -->
-    <!-- Use TinyApp Create URL Form as an example -->
     <form method="POST">
       <div class="form-group mb-2">
-        <label for="eventTitle">Title</label>
+        <label for="eventTitle">Event Title.</label>
           <input
           class="form-control"
           type="text"
           name="eventTitle"
-          placeholder="Best event ever!"
-          style="width: 200px; margin: 1em"
+          placeholder="Please enter name of your event."
+          style="width: 300px; margin: 1em"
           />
       </div>
       <div>
@@ -43,7 +42,7 @@
           class="form-control"
           type="text"
           name="eventDesc"
-          placeholder="Best description for the best event ever!"
+          placeholder="Please enter a description of your event."
           style="width: 300px; margin: 1em"
           />
       </div>
@@ -53,8 +52,8 @@
           class="form-control"
           type="text"
           name="organizerName"
-          placeholder="Name of the best organizer!"
-          style="width: 200px; margin: 1em"
+          placeholder="Please enter your name."
+          style="width: 300px; margin: 1em"
           />
       </div>
       <div>
@@ -63,11 +62,36 @@
           class="form-control"
           type="text"
           name="organizerEmail"
-          placeholder="Email of the best organizer!"
-          style="width: 200px; margin: 1em"
+          placeholder="Please enter your email."
+          style="width: 300px; margin: 1em"
           />
       </div>
       <button class="btn btn-primary">Create Event</button>
+      <!-- Attendee Information (will be moved) -->
+      <h4>Attendee Info</h4>
+      <form method="POST">
+        <div class="form-group mb-2">
+          <div>
+            <label for="visitorName">Your name!</label>
+              <input
+              class="form-control"
+              type="text"
+              name="visitorName"
+              placeholder="Please enter your name."
+              style="width: 300px; margin: 1em"
+              />
+            </div>
+            <div>
+              <label for="visitorEmail">Your email!</label>
+                <input
+                class="form-control"
+                type="text"
+                name="vistiorEmail"
+                placeholder="Please enter your email"
+                style="width: 300px; margin: 1em"
+                />
+            </div>
+      <button class="btn btn-primary">Join Event</button>
     </form>
   </main>
 </body>
